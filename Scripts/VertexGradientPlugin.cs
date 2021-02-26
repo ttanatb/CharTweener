@@ -27,6 +27,10 @@ namespace CharTween
             t.setter(t.startValue);
         }
 
+        public override void SetFrom(TweenerCore<VertexGradient, VertexGradient, NoOptions> t, VertexGradient e, bool f , bool g ) {
+        
+        }
+
         public override VertexGradient ConvertToStartValue(TweenerCore<VertexGradient, VertexGradient, NoOptions> t, VertexGradient value)
         {
             return value;
@@ -80,10 +84,6 @@ namespace CharTween
                 left.topRight * right,
                 left.bottomLeft * right,
                 left.bottomRight * right);
-        }
-
-        public override void SetFrom(TweenerCore<VertexGradient, VertexGradient, NoOptions> t, VertexGradient fromValue, bool setImmediately, bool isRelative)
-        {
         }
     } // Class
 } // Namespace
